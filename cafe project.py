@@ -30,18 +30,20 @@ while (confirmation == "yes"):
     elif order1 == 6:
         print("your order is placed!!")
         sum += 30
-    if(confirmation == "no"):
-        print("your final bill is:",finalsum)
-    elif(confirmation != "yes"):
-        print("sorry check your response and try again!!")
+
     else:
         print("please visit any other branch for those orders!!") 
     finalsum = sum 
     confirmation = input("please type 'yes' for placing further order and 'no' for final bill:")
+    if(confirmation == "no"):
+        print("your final bill is:",finalsum)
+    elif(confirmation != "yes"):
+        print("sorry check your response and try again!!")
 
 
 
 print("thankyou for coming!! please visit again")
+
 
 
 
